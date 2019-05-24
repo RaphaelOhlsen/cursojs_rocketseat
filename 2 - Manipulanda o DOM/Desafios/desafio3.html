@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="lista"></ul>
+</body>
+<script>
+  const $lista = document.querySelector('#lista')
+  var nomes = ['Diego', 'Gabriel', 'Lucas']
+
+  const createElement = (nome) => {
+    const $elemento = document.createElement('li')
+    $elemento.innerHTML = nome
+    $lista.appendChild($elemento)
+  }
+  
+  nomes.forEach(nome => {
+    createElement(nome)
+  })
+  
+</script>
+</html>
